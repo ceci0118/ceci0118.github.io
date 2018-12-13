@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --------------nav bar------------------------ */
+.navbar{
+    opacity: 0.65;
+    letter-spacing: 3px;
+}
+
+/* -------------- footer ------------------------ */
+footer{
+    color: #eee;
+    background-color: darkslategray!important;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: 0.4;
+}
+
+.my-footer i:hover{
+    color: #ff9000!important;
+}
+
+/* --------------home page header---------------- */
+.home-image{
+    height: 100vh;
+    width: 100%;
+    background: darkslategrey;
+    display: table;
+}
+
+.home-title{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+.home-title div{
+    border-left: 2px solid white;
+    margin-left: 7rem;
+}
+
+.home-title button{
+    padding: 10px 45px;
+    margin: 2rem 7rem;
+    background: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.home-title button:hover{
+    background: #ff9000;
+    cursor: pointer;
+}
+
+.home-title h1{
+    margin-left: 1rem;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: -4px;
+}
+
+.title-text span{
+    display: inline-block;
+}
+
+.hover-color{
+    color: #ff9000;
+}
+
+
+
+
+
+
+
+
+/* -------------content color------------------- */
+.course{
+    color: darkslategray;;
+    background: #ecf0f1;
+}
+
+.course:first-of-type{
+    padding-top: 8rem;
+}
+
+.course:last-of-type{
+    padding-bottom: 10rem;
+}
+
+.course:nth-of-type(odd) .logo{
+    border-left: 5px solid darkslategray;
+}
+
+.course:nth-of-type(even) .logo{
+    border-right: 5px solid darkslategray;
+}
+
+.logo h1{
+    font-family: 'Fredericka the Great', cursive;
+}
+
+
+
+
+
+/* --------------project page header---------------- */
+.project-image{
+    height: 50vh;
+    width: 100%;
+    background: darkslategray;
+    display: table;
+}
+
+
+/* --------------project page cards---------------- */
+.cards{
+    margin: 5rem;
+    color: darkslategray;
+}
+
+.cards .btn{
+    background: darkslategray;
+}
+.cards .btn:hover{
+    background: #ff9000;
+    color: #eee;
+    border: 1px solid #ff9000;
+}
+
+.card{
+    height: 28rem;
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.035);
+    background: #eee;
+}
+
+.card-img-top{
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body{
+    /* height: 230px; */
+}
+
+
+/* --------------contact page---------------- */
+.contact-one-page{
+    max-height: 100vh;
+    overflow: hidden;
+    background: darkslategray;
+}
+
+.contact-form{
+    width: 40%;
+    height: 100vh;
+    padding: 4rem 3rem 5rem 5rem;
+}
+
+textarea{
+    min-height: 120px;
+    max-height: 120px;
+}
+
+.contact-me button{
+    background: #ffb135;
+    color: white;
+    font-weight: 900;
+    transition: 0.3s linear;
+}
+.contact-one-page button:hover{
+    background: #eee;
+    color: #ff9000;
+}
+
+.map-container{
+    width: 60%;
+    height: 100vh;
+    float: right;
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form .my-footer{
+    margin-top: auto;
+    float: right;
+}
+
+.contact-form .my-footer i{
+    color: #141414!important;
+    opacity: 0.5;
+}
+.contact-form .my-footer i:hover{
+    color: #ff9000!important;
+    opacity: 1;
+}
+
+.contact-form .copyright{
+    clear: right;
+    float: right;
+    color: #141414;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+
+
+
+/* --------------media query---------------- */
+@media (max-width: 575px) {
+    /* home page */
+    .home-title div{
+        border-left: none;
+        white-space: nowrap;
+        margin: auto;
+    }
+    .home-title button{
+        margin: 2rem 1rem;
+    }
+    .course:first-of-type{
+        padding-top: 3rem;
+    }
+    .course:last-of-type{
+        padding-bottom: 3rem;
+    }
+    .course:nth-of-type(odd) .logo{
+        border-left: none;
+        width: 100%;
+    }
+    .course:nth-of-type(even) .logo{
+        border-right: none;
+        width: 100%;
+    }
+
+    /* project page */
+    .project-image>div{
+        text-align: center;
+    }
+    .card{
+        height: 500px;
+    }
+    .card-img-top{
+        height: 300px;
+    }
+
+    /* contact page */
+    .contact-one-page{
+        max-height: 100vh;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 4rem 2rem 5rem 2rem;
+    }
+    .map-container{
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    .home-title div{
+        border-left: none;
+        white-space: nowrap;
+        margin: auto 4rem;
+    }
+    .home-title button{
+        margin: 2rem 5rem;
+    }
+    .course:first-of-type{
+        padding-top: 5rem;
+    }
+    .course:last-of-type{
+        padding-bottom: 5rem;
+    }
+    .course:nth-of-type(odd) .logo{
+        border-left: none;
+        width: 100%;
+    }
+    .course:nth-of-type(even) .logo{
+        border-right: none;
+        width: 100%;
+    }
+
+    /* project page */
+    .project-image>div{
+        text-align: center;
+    }
+    .card{
+        height: 500px;
+    }
+    .card-img-top{
+        height: 300px;
+    }
+
+    /* contact page */
+    .contact-one-page{
+        max-height: 100vh;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 4rem 4rem 5rem 4rem;
+    }
+    .map-container{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    /* home page */
+    .home-title div{
+        margin: auto 6rem;
+    }
+    .course:nth-of-type(even) .logo{
+        float: left!important;
+        border-left: 5px solid darkslategray;
+        border-right: none;
+        margin-left: 0!important;
+    }
+
+    /* contact page */
+    .contact-one-page{
+        max-height: 100vh;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 4rem 5rem 5rem 5rem;
+    }
+    .map-container{
+        display: none;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .contact-form{
+        padding: 4rem 2rem 5rem 2rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+}

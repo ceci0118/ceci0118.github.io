@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML template">
+    <meta name="author" content="Yongshi Luo">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Portfolio.html</title>
+    
+</head>
+
+<body class="contact-page">
+
+    <div class="contact-one-page">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h1 class="ml-5"><a href="index.html" class="navbar-brand">Portfolio</a></h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav-bar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end mr-5" id="my-nav-bar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ml-5">
+                        <a href="index.html" class="nav-link">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ml-5">
+                        <a href="project.html" class="nav-link">Projects</a>
+                    </li>
+
+                    <li class="nav-item ml-5">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="contact-form float-left d-flex flex-column">
+            <main class="contact-me mt-auto">
+
+                <form method="POST" class="form-group" action="https://formspree.io/luo00046@algonquinlive.com">
+                    <p class="display-4 text-light">Contact Me:</p>
+    
+                    <label for="name" class="h6 text-light">Name: </label>
+                    <input type="name" name="name" placeholder="Your name" class="form-control">
+    
+                    <label for="email" class="h6 mt-3 text-light">Email: </label>
+                    <input type="email" name="email" placeholder="Your email" class="form-control">
+    
+                    <label for="message" class="h6 mt-3 text-light">Message: </label>
+                    <textarea name="message" placeholder="Test Message" class="form-control" row="50" cols="80"></textarea>
+    
+                    <button type="submit" class="btn btn-light mt-5 px-5">Send</button>
+                </form>
+                
+            </main>
+
+
+            <div class="my-footer align-self-end mt-auto">
+                <a target="_blank" href="https://www.linkedin.com/in/ceci0118/" class="social-icon">
+                    <i class="fab fa-linkedin fa-2x mr-3 text-light"></i>
+                </a>
+                
+                <a target="_blank" href="https://www.facebook.com/yongshi.luo" class="social-icon">
+                    <i class="fab fa-facebook-square fa-2x mr-3 text-light"></i>
+                </a>
+
+                <a target="_blank" href="https://github.com/ceci0118" class="social-icon">
+                    <i class="fab fa-github-square fa-2x mr-3 text-light"></i>
+                </a>
+
+                <a target="_blank" href="https://codepen.io/ceci-law/" class="social-icon">
+                    <i class="fab fa-codepen fa-2x text-light"></i>
+                </a>
+            </div>
+            <p class="copyright align-self-end mt-0">Copyright ©Design and developed by YongshiLuo</p>
+
+        </div>
+
+        <div class="map-container bg-dark">
+            <div class="map" id="map"></div>
+        </div>
+        
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdZ8D1JfO-fa18EBsSI7C8sp-CnTvjWu4&callback=initMap">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+</body>
+</html>
